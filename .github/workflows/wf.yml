@@ -24,7 +24,7 @@ jobs:
       - name: "Pytest"
         run: python -m pytest
       - name: "Run coverage"
-        run: coverage run -m
+        run: coverage run -m pytest
       - name: "Upload artefact"
         uses: actions/upload-artifact@v2
         with:
