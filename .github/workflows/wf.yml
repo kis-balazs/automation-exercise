@@ -21,8 +21,8 @@ jobs:
           python-version: '3.8'
       - name: "Install dependencies"
         run: pip install pytest coverage
-      - name: "Run coverage report of test"
-        run: pytest
+      - name: "Pytest"
+        run: python -m run pytest
       - name "Run coverage"
         run: coverage run -m
       - name: "Upload artefact"
