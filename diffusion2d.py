@@ -1,4 +1,3 @@
-
 """
 Solving the two-dimensional diffusion equation
 
