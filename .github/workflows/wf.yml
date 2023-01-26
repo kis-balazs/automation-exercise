@@ -22,7 +22,7 @@ jobs:
       - name: "Install dependencies"
         run: pip install pytest coverage
       - name: "Pytest"
-        run: python -m run pytest
+        run: python -m pytest
       - name: "Run coverage"
         run: coverage run -m
       - name: "Upload artefact"
