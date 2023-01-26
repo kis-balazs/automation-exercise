@@ -12,3 +12,22 @@ jobs:
         run: pip install black
       - name: "Run black"
         run: black --check .
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: "Install dependencies"
+        run: /
+          pip install pytest
+          pip install 
+      - name: "Run coverage report of test"
+        run: converage run -m pytest tests/ > .coverage
+      - name: "Upload artefact"
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: .coverage
+          retention-days: 5
