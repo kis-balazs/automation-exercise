@@ -23,7 +23,7 @@ jobs:
         run: pip install pytest coverage
       - name: "Pytest"
         run: python -m run pytest
-      - name "Run coverage"
+      - name: "Run coverage"
         run: coverage run -m
       - name: "Upload artefact"
         uses: actions/upload-artifact@v2
